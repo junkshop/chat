@@ -1,0 +1,40 @@
+/* CSS declarations go here */
+/* CSS declarations go here */
+#main_cont{
+ 
+  width: 50%;
+  margin: 20px auto 0 auto;
+
+}
+
+#chat_box{
+  border:1px solid black;
+  position: relative;
+  background-color: white;
+  overflow-y:auto;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 420px;
+}
+textarea{
+ resize: none;
+  width: 100%;
+ margin-top: 20px;
+}
+.usr_name{
+  float: left;
+  font-weight: 900;
+  margin-right: 10px;
+}
+.msg_holder{
+  word-wrap: break-word;
+  /*background-color: red;*/
+  width: 100px;
+  float: left;
+}
+.tme{
+/*	float: right;
+*/	color:#BEBEBE;
+	/*margin-right: 0;*/
+}

@@ -1,0 +1,37 @@
+<head>
+  <title>chat</title>
+</head>
+
+<body>
+  <div style="text-align: center;">
+
+  {{> loginButtons}}
+  <h1>group chat</h1>
+  </div>
+  <section>
+      {{>chatbox}}
+  </section>
+
+</body>
+
+<template name='chatbox'>
+{{#if currentUser}}
+  <div id='main_cont'>
+    <div id='chat_box_container'>
+        <div id='chat_box'>
+          <div id='chat' style='top:92%;position: relative;width:80%;'>
+            {{#each message}}
+              <div style='clear: both;'>
+                <span class='usr_name'>{{sentBy}}: </span>
+                <p class='msg_holder'>{{msg}}<br/><span class='tme'><i>sent: {{tme}}</i></span></p>
+              </div>
+            {{/each}}
+          </div>
+        </div>
+        <textarea name='txtA' id='tArea' class="form_group"></textarea>
+    </div>
+  </div>
+  {{else}}
+  <p style="text-align: center">Logged in to chat</p>
+{{/if}}
+</template>
